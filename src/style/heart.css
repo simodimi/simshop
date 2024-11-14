@@ -1,0 +1,12 @@
+.Main-Heart{
+    width: 60%;
+    margin: auto;
+    margin-top: 80px;
+    cursor: default;
+}
+#eye{
+    cursor: pointer;
+}
+#eye:hover{
+    color: blue;
+}

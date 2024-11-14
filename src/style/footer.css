@@ -1,0 +1,208 @@
+.Main-Footer{  
+    background-color: grey;
+    width: 100%;
+    margin-top: 80px;
+    cursor: default;
+}
+.Footer-Email{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../assets/banner/b2.jpg');
+    width: 90%;
+    padding: 10px 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.Email-input{
+  width: 80%;
+  height: 100%; 
+
+}
+.Email-input input{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+.Email-input input::placeholder{
+ padding-left: 15px; 
+  }
+.Email-button{
+    width: 20%;
+    height: 50px;
+    background-color: blue;
+    border-radius:0 15px 15px 0;
+    cursor: pointer;
+    border: 1px solid blue; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Email-button button{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.Email-button:hover{
+    background-color: green;
+    border: 1px solid green;
+    cursor: pointer;
+}
+.Footer-Email-Right{
+    width: 500px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+
+}
+.Footer-Email-Insert{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.Footer-verification-Email{
+    position: absolute;
+    margin-left: 40%;
+    transform: translateX(-50%);
+    top: -45%;
+}
+.Footer-verification-Email img{
+width: 20px;
+height: 20px;
+}
+.Footer-verification-Email p{
+    display: flex;
+    font-size: 12px;
+    margin: 0;
+}
+.Footer-verification-Email span:nth-child(1){
+    color: green;
+    display: flex;
+    align-items: center;
+}
+.Footer-verification-Email span:nth-child(2){
+    color: red;
+    display: flex;
+    align-items: center;
+}
+.Footer-verification-Email span:nth-child(3){
+    color: blue;
+    display: flex;
+    align-items: center;
+}
+.Footer-Text{
+    margin-top: 80px;
+    padding: 10px 5%;
+    width: 90%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(5,1fr);
+}
+.Footer-Text a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+.Footer-Text a:hover{
+    color: pink;
+
+}
+
+.Footer-Text a::after{
+    position: absolute;
+    content: '';
+    width:0;
+    bottom: -3px;
+    left: 0;
+    height: 2px ;
+    background-color: pink;   
+}
+.Footer-Text a:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+.Footer-Copyright{
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.Footer-Copyright p{
+   text-align: center;
+   font-weight: bold;
+}
+.Footer-Text h5{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.Footer-Text p{
+    text-transform: capitalize;
+
+}
+
+.Footer-Text-Element p img{
+    width:30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.Footer-Text-Element p {
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (min-width:1200px) and (max-width:1440px){
+      .Footer-Text-Element h5{
+        font-size: 12px;
+      }
+}
+@media screen and (min-width:768px) and (max-width:1200px){
+    .Footer-Text{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .Footer-Text-Element h5{
+        font-size: 12px;
+      }
+}
+
+@media screen and (max-width:768px) and (min-width:600px){
+    .Footer-Text{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .Footer-Email-Left p{
+        font-size: 12px;
+    }
+    .Footer-Email{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:600px){
+    .Footer-Text{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Footer-Email-Left p{
+        font-size: 12px;
+    }
+    .Footer-Email{
+        display: flex;
+        flex-direction: column;
+    }
+    .Email-input{
+        width: 200px;
+    }
+    .Email-button{
+        width: 100px;
+    }
+    .Footer-Email-Right{
+        width: 300px;
+    }
+}   

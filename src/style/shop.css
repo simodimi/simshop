@@ -1,0 +1,73 @@
+.Main-Shop{
+    width: 100%;
+    cursor: default;
+}
+#Main-Shop-Title{
+    text-align: center;
+    font-size: 30px;
+    margin: 80px 0;
+    font-weight: bold;
+}
+.Main-sub-Shop-List{
+    border: 1px solid black; 
+    width: 100%; 
+}
+.Shop-image{
+    width:120px ;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px 0;
+}
+.Main-sub-Shop-List img{
+  /*  width: 100%;
+    height: 180px;
+    padding: 10px 0 ;
+   object-fit: fill;*/
+   height: 100%;
+   width: 100%;
+}
+.Main-sub-Shop-List p{
+ text-align: center; 
+ font-size: 15px; 
+ text-transform: capitalize;
+ font-weight: bold;
+}
+.Main-Shop-List{
+    display: grid;
+    width: 90%;
+    column-gap:5%;
+    row-gap: 50px;
+    padding:0 5%;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: space-between;
+}
+.Main-sub-Shop-List:hover{
+    transition: 0.5s linear;
+   scale: 1.1;
+}
+.Main-sub-Shop-List:hover.Main-sub-Shop-List p{
+   color: green;
+}
+@media screen and (max-width: 1250px) and (min-width: 985px){
+    .Main-Shop-List{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media screen and (max-width: 984px) and (min-width: 700px){
+    .Main-Shop-List{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 699px) and (min-width: 600px){
+    .Main-Shop-List{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 599px){
+    .Main-Shop-List{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

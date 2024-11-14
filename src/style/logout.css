@@ -1,0 +1,16 @@
+.Main-Logout{
+    width:30%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#alogout{
+    cursor: pointer;
+    color: green;
+    display: flex;
+   justify-content: center;
+   margin-top: 10px;
+}

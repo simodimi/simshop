@@ -1,0 +1,72 @@
+.Fire-Images{
+    flex: 1;
+    margin-top: 80px;
+   cursor: default;
+}
+.Fire-Images-Haut{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    width: 100%;
+}
+.Fire-Images-Bas{ 
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    width: 100%;
+}
+.Fire-Image-Item{
+    position: relative;
+}
+.Fire-Image-Item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Fire-Image-Text{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    left: 5%;   
+}
+.Fire-Image-Text p:nth-child(1){
+ font-weight: bold;  
+ font-size: 25px;
+}
+.Fire-Images a{
+    color: black;
+}
+#btn-Fire{
+    background-color: aqua;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 10px;
+   
+}
+#btn-Fire:hover{
+    background-color: green;
+    transition: 1.5s linear;
+}
+
+.Fire-Image-Text p:nth-child(4) a{
+    color: white;
+    text-decoration: none;
+}
+#Fire-Image-Item:hover{
+   filter:brightness(0.5);
+}
+@media screen and (max-width:1024px) and (min-width:801px){
+    .Fire-Image-Text p:nth-child(1){
+        font-weight: bold;  
+        font-size: 12px;
+       }
+    .Fire-Images p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:800px){
+    .Fire-Images-Haut,.Fire-Images-Bas{
+        grid-template-columns: repeat(1,1fr);
+    } 
+}

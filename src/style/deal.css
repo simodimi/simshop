@@ -1,0 +1,206 @@
+.Home-Deals{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.Deals-articles{
+    width: 25%;
+}
+.Deals-articles-Title{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: blue;
+    position: relative;
+}
+.Deals-articles-Title p{
+    font-weight: bold; 
+}
+.Deals-articles-Title img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    width: 30px;
+    height: 30px;
+    animation: fire 0.8s linear infinite;
+    padding-bottom: 10px;
+}
+@keyframes fire{
+    0%{scale: 1;}
+    50%{scale: 1.2;}
+    100%{scale: 1;}
+}
+.Deals-articles-Photo{
+    width: calc(100% - 2px);
+    height:470px ;
+    border: 1px solid gray;
+}
+.Deals-articles-Photo img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+}
+.Deals-Publicite{
+    position: relative;
+    height: 470px;  
+}
+.Promo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    background-color: burlywood;   
+}
+.Promo p{
+text-align: center;
+opacity: 0.8;
+margin: 0;
+}
+.Deals-promotion{
+    width: 73%;
+}
+.Home-Deals-Left,
+.Home-Deals-Right{
+    min-width: calc(100% - 8px );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+.Home-Deals-Img{
+    width: 50%;
+}
+.Home-Deals-Img img{
+    width: 100%;
+    height: 100%;
+}
+.Home-Deals-Text{
+    width: 40%;
+    height: calc(100% - 20px);
+    padding: 10px 5%;
+}
+.Deals-Price{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.Deals-Price p:nth-child(1){
+    color: pink;
+    font-size: 25px;
+    margin: 0;
+}
+.Deals-Price p:nth-child(2){
+    text-decoration: line-through;
+}
+.Home-Deals-Text p:nth-child(2){
+    text-align: justify;
+}
+.Home-Deals-Text button{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: pink;
+    padding: 20px 60px;
+}
+.Home-Deals-Text button:hover{
+    transition: 0.9s  linear;
+    background-color:green;
+    cursor: pointer;
+}
+.Deals-Rest{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 5px solid gray;
+    position: relative;
+}
+.Deals-Progress/*Deals-Rest::before*/{
+    position: absolute;
+    display: flex;
+    top: calc(100% + 1px);
+    left: 0;
+    content:'';
+    border-bottom: 3px solid red;
+}
+.Deals-Rest span{
+    font-weight: bold;
+}
+.Deals-Date{
+    display: flex;
+    justify-content: space-around;
+}
+.Deals-Time{
+    background-color: pink;
+    padding: 10px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.Deals-Time p{
+    margin: 0;
+}
+.Home-Deals-Home{
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    min-width: 100%;
+}
+@media screen and (max-width: 1600px) and (min-width: 1440px){
+    
+    .Deals-Time p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 1439px) and (min-width: 945px){
+    
+    .Deals-Time p{
+        font-size: 10px;
+    }
+    .Deals-Time{
+        padding: 10px 15px;
+    }
+    .Deals-Rest p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 944px) and (min-width: 800px){
+    
+    .Deals-Time p{
+        font-size: 10px;
+    }
+    .Deals-Time{
+        padding: 10px 15px;
+    }
+    .Home-Deals-Left,.Home-Deals-Right{
+        flex-direction: column;
+    }
+    .Deals-Rest p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 799px){
+    
+    .Deals-Time p{
+        font-size: 10px;
+    }
+    .Deals-Time{
+        padding: 10px 5px;
+    }
+    .Home-Deals-Left,.Home-Deals-Right{
+        flex-direction: column;
+    }
+    .Deals-articles{
+        display: none;
+    }
+    .Home-Deals{
+      justify-content: center;
+    }
+    .Deals-Rest p{
+        font-size: 10px;
+    }
+}

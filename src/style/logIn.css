@@ -1,0 +1,57 @@
+.MainLogIn{
+    width:30%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   
+
+}
+.LoginPage{
+    width: 100%; 
+}
+#LoginForm{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+#LoginForm label{
+    color: black;
+}
+#LoginForm button{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+#LoginForm button:hover{
+   cursor: pointer;
+   background-color: green;
+   color: white;
+}
+.LoginForget{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#alogin{
+    cursor: pointer;
+    display: flex;
+   justify-content: center;
+   margin-top: 10px;
+}
+#alogin:hover{
+    color: green;
+}
+#aforget{
+    cursor: pointer;
+    display: flex;
+   justify-content: center;
+   margin-top: 10px;
+}
+#aforget:hover{
+color: red;
+cursor: pointer;
+}

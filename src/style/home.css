@@ -1,0 +1,230 @@
+.Main-Home{
+  width: 100%;
+}
+.MainSubHome{
+width: 80%;
+padding: 0 10%;
+}
+.Home-Search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 100%;
+    height: 60px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+#Home-Categories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+    background-color: gainsboro;
+    width: 15%;
+    cursor: pointer;
+}
+.Home-Search input{
+    display: flex;
+    height: 100%;
+    width: 70%;
+    border: none;
+    outline: none;
+}
+.Home-Search input::placeholder{
+padding-left: 10px;
+font-size: 15px;
+}
+#search{
+    display: flex;
+    width: 15%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.Home-Categories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+.Home-List{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15%;
+    height: 100%;
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 25px 0 0 25px;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.Home-List-style{
+width: 85%;
+height: 100%;
+border-radius: 0 25px 25px 0;
+padding: 10px 0;
+border: 1px solid black;
+}
+.Categories-List{
+    width: calc(100% - 30px);
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;   
+}
+.Categories-List p:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.Home-Banner{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    padding: 10px 0;
+    background-color: white;
+    top: -10px;
+    left: 0;
+}
+.Banner-Image{
+    width: 100%;
+    height: 400px;
+}
+.Banner-Image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+    box-shadow: 3px 0 5px 0 rgb(0, 0, 0, 1);
+    overflow: hidden;
+}
+.Banner-Slide{
+    min-width: 100%;
+    height: 100%;
+    position: relative;  
+}
+.Banner-Text{
+    position: absolute;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 40%;
+    height: 100%;
+
+}
+.Banner-Text p:nth-child(2){
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+.Banner-Text p:nth-child(3){
+ padding-bottom: 15px;
+}
+.Banner-Link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: #007BFF;
+    cursor: pointer;
+}
+.Banner-Link:hover{
+    transition: 0.5s ease;
+    background-color: green;
+}
+.Sub-Home-Categories{
+    position: absolute;
+    width: 80%;
+    height:100%;
+    padding: 0 10%;
+    background-color: rgba(180, 170, 170);
+    top: 0px;
+    left: 0;
+    filter:opacity(0.8); 
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow-y:auto;
+    scrollbar-width: thin;
+}
+.Sub-Home-Categories.Visible{
+    display: grid;
+}
+.Sub-Home-Categories.Invisible{
+    display: none;
+}
+.Sub-Choix-Categories{
+    position: absolute;
+    width: 15%;
+    height:400px;
+    padding: 0 0;
+    background-color:gainsboro;
+    top: 0px;
+    left: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    overflow-y:auto;
+    scrollbar-width: thin;
+}
+.Selection-User-Category img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.Selection-User-Category a{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 5px;
+}
+.Selection-User-Category a:hover{
+ background-color: green;
+}
+.Selection-User-Category p{
+    margin: 10px 0;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.Sub-Choix-Categories.Visible{
+    border: 1px solid black;
+    transition: 0.8s linear;
+    height: 400px;
+}
+.Sub-Choix-Categories.Invisible{
+    transition: 0.8s linear;
+    height: 0px;
+}
+.Sub-Home-Categories a{
+    text-transform: lowercase;
+    font-weight: bold;
+}
+.Sub-Home-Categories a:hover{
+   color: green;
+}
+.Sub-Home-Categories li{
+    list-style-type:disc;
+}
+.No-Article{
+   position: absolute;
+   margin-left: 50%;
+   transform: translateX(-50%);
+}
+.No-Article p{
+    font-weight: bold;
+}

@@ -1,0 +1,65 @@
+.HeadBuy{
+    width:100%;
+    height:calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: auto;
+  
+}
+.SubHeadBuy{
+    width: 340px;
+    height: 500px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 30px;
+    
+}
+.SubHeadBuy img{
+    width: 100%;
+    height: 100%; 
+}
+.LogoImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto 20px auto;
+    width: 180px;
+    height: 100px;
+    background-color: aqua;
+}
+.SubHeadBuy p{
+    font-weight: bold; 
+}
+.SubHeadBuy p span{
+    font-weight: bold;
+    color: green; 
+    text-decoration:underline ;
+}
+button{
+  margin-top: 30px;
+  display: flex;
+margin-left: 50%;
+transform: translateX(-50%);
+   padding: 10px 30px;
+}
+#buybtn{
+    border: 1px solid gray;
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: gainsboro;
+}
+#buybtn:hover{
+    transition: 0.5s ease;
+    background-color: green;
+    border: 1px solid green;
+}
+#checkoutbtn:hover{
+    transition: 0.5s ease;
+    background-color: green;
+    border: 2px solid green; 
+    cursor: pointer; 
+}

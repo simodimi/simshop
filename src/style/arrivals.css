@@ -1,0 +1,210 @@
+.Main-Arrivals{
+    width:100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+}
+.Main-Arrivals-Left{
+    width: 25%;
+}
+.Arrivals-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 5px 5%;
+    background-color: rgba(0, 0, 255, 0.3);
+
+}
+.Arrivals-img{
+    display: flex;
+    width:20% ;
+    justify-content: center;
+    align-items: center;
+}
+.Arrivals-img img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.Arrivals-Texte{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+.Arrivals-Texte p{
+  margin: 0;
+}
+.Arrivals-Texte p:nth-child(1){
+    font-weight: bold;
+}
+.Arrivals-Texte p:nth-child(2){
+    font-weight: bold;
+    color: gray;
+   font-size: 30px;
+   cursor: pointer;
+}
+.Arrivals-Texte p:nth-child(2):hover{
+    color: green;
+}
+.Arrivals-sub a{
+    text-decoration: none;
+    color: black;
+}
+.Main-Arrivals-Right{
+    width: 73%; 
+}
+.First-Arrivals-Title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+    padding: 0 3%;
+}
+.First-Arrivals-Title p{
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+.First-Arrivals-Articles{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+.First-Arrivals-Articles-Left,.First-Arrivals-Articles-Center,.First-Arrivals-Articles-Right{
+    display: grid;
+    grid-template-columns: repeat(2,100%);
+    gap: 20px;
+    min-width: 100%;
+    border: 1px solid black;
+    scrollbar-width: thin;
+    overflow-x: scroll;
+ 
+}
+
+.First-Arrivals-Items{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    background-color:white;
+    min-width: calc(100% - 22px);
+    padding: 0 10px;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px 0 rgb(0, 0, 0, 0.5);
+  
+}
+.First-Arrivals-Items-Photos{
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+.First-Arrivals-Items-Photos img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.First-Arrivals-Items-Text p:nth-child(3){
+    display: flex;
+    align-items: flex-end;
+  
+   
+}
+.First-Arrivals-Items-Text p span:nth-child(1){
+   color: green;
+   font-weight: bold;
+   margin-right: 20px;
+   font-size: 20px;
+}
+.First-Arrivals-Items-Text p span:nth-child(2){
+    color: gray;
+ }
+.First-Arrivals-Articles a{
+    text-decoration: none;
+    color: black;
+}
+.Arrivals-sub p:hover{
+    background-color: rgba(0, 180, 0, 0.5);
+    cursor: pointer;
+}
+.Arrivals-sub p{
+   padding-left: 10px;
+}
+.Arrivals-Articles{
+    border: 1px solid gray;
+
+}
+.Main-Arrivals-Left-Articles{
+    height: 520px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+.Arrivals-sub.activex p{
+    animation: free1 0.8s linear;
+    border:none;
+}
+@keyframes free1{
+    0%{transform: translateY(-20px);}
+    100%{transform: translateY(0px);}
+}
+.Arrivals-sub.desactive{
+   display: none;
+}
+.Arrivals-sub{
+   background-color: rgba(0, 255, 0, 0.3);
+   padding: 10px 0;
+}
+@media  screen and (max-width: 1440px) {
+    #Name-Arrivals{
+        font-size: 14px; 
+    }
+}
+@media screen and (max-width: 1400px) and (min-width: 1024px){
+    #Name-Arrivals{
+        font-size: 12px; 
+    }
+    #Name-Arrivals1{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1023px) and (min-width: 700px){
+    #Name-Arrivals{
+        font-size: 12px; 
+    }
+    #Name-Arrivals1{
+        font-size: 12px;
+    }
+    .Main-Arrivals-Left{
+        display: none;
+    }
+    .Main-Arrivals-Right{
+        width: 100%; 
+    }
+}
+@media screen and (max-width: 699px) {
+    #Name-Arrivals{
+        font-size: 12px; 
+    }
+    #Name-Arrivals1{
+        font-size: 12px;
+    }
+    .Main-Arrivals-Left{
+        display: none;
+    }
+    .Main-Arrivals-Right{
+        width: 50%; 
+        justify-content: center;
+        margin: auto;
+    }
+    .First-Arrivals-Articles{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .First-Arrivals-Title p{
+        font-size: 8px;
+    }
+}

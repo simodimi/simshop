@@ -1,0 +1,141 @@
+.Main-Shopping{
+    width: 80%;
+    padding: 80px 10%;
+}
+.Shopping-Items table td{
+    background-color: white;
+}
+.Shopping-Items img{
+    height: 80px;
+    width: 80px;
+    object-fit: scale-down;
+}
+.Shopping-Items th{
+    border: 1px solid black;
+    padding: 10px 0;
+}
+.Shopping-Items p{
+    margin: 0;
+}
+.Shopping-Items input{
+    width: 40px;
+}
+.Shopping-Items #drop{
+    cursor: pointer;
+    font-size: 25px;
+}
+.Shopping-Items #drop:hover{
+    scale: 1.3;
+   color: red;
+}
+.Shopping-Card{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+}
+.Shopping-Card-Left{
+    width: 43%;
+    border: 1px solid gray;
+    padding: 0 10px;
+}
+.Shopping-Card-Left input{
+    padding: 10px 0;
+    outline: none;
+    padding-left: 10px;
+}
+.Shopping-Card-Right{
+    width: 43%;
+}
+.Localisation-city{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+}
+#adresse{
+    width:calc(100% - 15px);
+}
+::placeholder{
+    padding-left: 10px;
+}
+#country{
+    position: relative;
+    border: none;
+    width: fit-content;
+    padding: 10px 0px ;
+}
+#flag{
+    position: relative;
+}
+
+#country span{
+    position: absolute;
+    top: -0px;
+    color: red;
+    font-size: 20px;
+}
+
+#country input{
+    padding: 10px 30px  10px 10px;
+}
+
+.Shopping-Card-Left #valider{
+    background-color: gray;
+outline: none;
+border: 1px solid gray;
+padding: 10px 30px;
+cursor: pointer;
+margin-bottom: 10px;
+}
+.Shopping-Card-Left #valider:hover{
+    transition: 0.5s ease;
+    background-color: green;
+    border: 1px solid green;
+}
+#btn-paiement{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    width: fit-content;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.Localisation-city p{
+    position: relative;
+}
+.Localisation-city p span{
+    position: absolute;
+    top: -10px;
+    color: red;
+    font-size: 20px;
+
+}
+.NoArticle p{
+text-align: center; 
+font-weight: bold;
+font-size: large;
+}
+.NoArticle img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+@media screen and (max-width:840px)
+{
+    .Shopping-Card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Shopping-Card-Left{
+        width:auto;
+        
+    }
+}
